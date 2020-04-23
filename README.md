@@ -1,16 +1,23 @@
-# 介绍
+# 概述
 
-从docker拉取镜像
+* [开始](README.md)
+* 消息队列模式
+  * [Hello World](queue/hello_world.md)
+  * [Work queues](queue/work_queues.md)
+  * [Publish / Subscribe ](queue/publish_subscribe.md)
+  * [Routing](queue/routing.md)
+  * [Topics](queue/topics.md)
+  * [RPC](queue/rpc.md)
+  * [Publisher Confirms](queue/publisher_confirms.md)
 
-```docker pull rabbitmq:3-management```  带管理后台的镜像
+* 服务端文档(Server Documentation)
+  * [Configuration](server/configuration.md)
+  * 
 
-启动镜像
-
-`docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management` 
-
-登录账号： guest  密码：guest
-
-`docker log rabbitmq`  查看日志
-
-默认端口是`5672`
+* 分布式RabbitMQ(Distributed RabbitMQ)
+  * [概述（Mirroring, Shovel, Federation Overview）](distribute/overview.md)
+  * [Clustering](https://www.rabbitmq.com/clustering.html)
+  * [Queue Mirroring](https://www.rabbitmq.com/ha.html)
+  * [Reliable Message Delivery](https://www.rabbitmq.com/reliability.html)
+  *  [highly available](https://www.rabbitmq.com/pacemaker.html) 
 
