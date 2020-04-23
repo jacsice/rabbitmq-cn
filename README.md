@@ -15,7 +15,7 @@
 
 * 分布式RabbitMQ(Distributed RabbitMQ)
   * [概述（Mirroring, Shovel, Federation Overview）](https://jacsice.github.io/rabbitmq-cn/distribute/overview.html)
-  * [Clustering](https://www.rabbitmq.com/clustering.html)
+  * [Clustering](https://jacsice.github.io/rabbitmq-cn/distribute/clustering.html)
   * [Queue Mirroring](https://www.rabbitmq.com/ha.html)
   * [Reliable Message Delivery](https://www.rabbitmq.com/reliability.html)
   *  [highly available](https://www.rabbitmq.com/pacemaker.html) 
