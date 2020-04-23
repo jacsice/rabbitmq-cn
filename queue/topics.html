@@ -1,0 +1,517 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Topics · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="rpc.html" />
+    
+    
+    <link rel="prev" href="routing.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    消息队列模式
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="hello_world.html">
+            
+                <a href="hello_world.html">
+            
+                    
+                    Hello World
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="worker.html">
+            
+                <a href="worker.html">
+            
+                    
+                    Work queues
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="publish_subscribe.html">
+            
+                <a href="publish_subscribe.html">
+            
+                    
+                    Publish / Subscribe 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="routing.html">
+            
+                <a href="routing.html">
+            
+                    
+                    Routing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.5" data-path="topics.html">
+            
+                <a href="topics.html">
+            
+                    
+                    Topics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="rpc.html">
+            
+                <a href="rpc.html">
+            
+                    
+                    RPC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="publisher_confirms.md">
+            
+                <span>
+            
+                    
+                    Publisher Confirms
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    服务端文档(Server Documentation)
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../server/configuration.md">
+            
+                <span>
+            
+                    
+                    Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Topics</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h4 id="&#x5185;&#x5BB9;&#x6458;&#x8981;">&#x5185;&#x5BB9;&#x6458;&#x8981;</h4>
+<blockquote>
+<p>Although using the direct exchange improved our system, it still has limitations - it can&apos;t do routing based on multiple criteria.</p>
+<p>In our logging system we might want to subscribe to not only logs based on severity, but also based on the source which emitted the log. You might know this concept from the <a href="https://en.wikipedia.org/wiki/Syslog" target="_blank">syslog</a> unix tool, which routes logs based on both severity (info/warn/crit...) and facility (auth/cron/kern...).</p>
+<p>That would give us a lot of flexibility - we may want to listen to just critical errors coming from &apos;cron&apos; but also all logs from &apos;kern&apos;.</p>
+<p>To implement that in our logging system we need to learn about a more complex topic exchange.</p>
+</blockquote>
+<p>&#x867D;&#x7136;&#x4F7F;&#x7528;<code>direct exchange</code>&#x6539;&#x8FDB;&#x4E86;&#x6211;&#x4EEC;&#x7684;&#x7CFB;&#x7EDF;&#xFF0C;&#x4F46;&#x5B83;&#x4ECD;&#x7136;&#x6709;&#x5C40;&#x9650;&#x6027;&#x2014;&#x2014;&#x5B83;&#x4E0D;&#x80FD;&#x57FA;&#x4E8E;&#x591A;&#x4E2A;&#x6807;&#x51C6;&#x8FDB;&#x884C;&#x8DEF;&#x7531;&#x3002;</p>
+<p>&#x5728;&#x6211;&#x4EEC;&#x7684;&#x65E5;&#x5FD7;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x80FD;&#x4E0D;&#x4EC5;&#x5E0C;&#x671B;&#x6839;&#x636E;&#x4E25;&#x91CD;&#x6027;&#x8BA2;&#x9605;&#x65E5;&#x5FD7;&#xFF0C;&#x8FD8;&#x5E0C;&#x671B;&#x6839;&#x636E;&#x53D1;&#x51FA;&#x65E5;&#x5FD7;&#x7684;&#x6E90;&#x8BA2;&#x9605;&#x65E5;&#x5FD7;&#x3002;&#x4F60;&#x53EF;&#x80FD;&#x4ECE;<a href="https://en.wikipedia.org/wiki/Syslog" target="_blank">syslog</a> unix&#x5DE5;&#x5177;&#x4E2D;&#x77E5;&#x9053;&#x8FD9;&#x4E2A;&#x6982;&#x5FF5;&#xFF0C;&#x8BE5;&#x5DE5;&#x5177;&#x6839;&#x636E;&#x4E25;&#x91CD;&#x7A0B;&#x5EA6;(info/warn/crit&#x2026;)&#x548C;&#x5DE5;&#x5177;(auth/cron/kern&#x2026;)&#x6765;&#x8DEF;&#x7531;&#x65E5;&#x5FD7;&#x3002;</p>
+<p>&#x8FD9;&#x5C06;&#x7ED9;&#x6211;&#x4EEC;&#x5F88;&#x5927;&#x7684;&#x7075;&#x6D3B;&#x6027;&#x2014;&#x2014;&#x6211;&#x4EEC;&#x53EF;&#x80FD;&#x5E0C;&#x671B;&#x53EA;&#x76D1;&#x542C;&#x6765;&#x81EA;<code>cron</code>&#x7684;&#x5173;&#x952E;&#x9519;&#x8BEF;&#xFF0C;&#x4F46;&#x4E5F;&#x8981;&#x76D1;&#x542C;&#x6765;&#x81EA;<code>kern</code>&#x7684;&#x6240;&#x6709;&#x65E5;&#x5FD7;&#x3002;</p>
+<p>&#x8981;&#x5728;&#x65E5;&#x5FD7;&#x7CFB;&#x7EDF;&#x4E2D;&#x5B9E;&#x73B0;&#x8FD9;&#x4E00;&#x70B9;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4E86;&#x89E3;&#x66F4;&#x590D;&#x6742;&#x7684;&#x4E3B;&#x9898;&#x4EA4;&#x6362;&#x3002;</p>
+<h2 id="topic-exchange">Topic exchange</h2>
+<blockquote>
+<p>Messages sent to a topic exchange can&apos;t have an arbitrary routing_key - it must be a list of words, delimited by dots. The words can be anything, but usually they specify some features connected to the message. A few valid <code>routing key</code> examples: &quot;stock.usd.nyse&quot;, &quot;nyse.vmw&quot;, &quot;quick.orange.rabbit&quot;. There can be as many words in the routing key as you like, up to the limit of 255 bytes.</p>
+<p>The <code>binding key</code> must also be in the same form. The logic behind the topic exchange is similar to a direct one - a message sent with a particular routing key will be delivered to all the queues that are bound with a matching binding key. </p>
+<p>However there are two important special cases for binding keys:</p>
+<ul>
+<li><p>*(star) can substitute for exactly one word.</p>
+</li>
+<li><p># (hash) can substitute for zero or more words.</p>
+</li>
+</ul>
+</blockquote>
+<p>&#x53D1;&#x9001;&#x7ED9;<code>topic exchange</code>&#x7684;&#x6D88;&#x606F;&#x4E0D;&#x80FD;&#x6709;&#x968F;&#x610F;&#x7684;<code>routing_key</code>, &#x5B83;&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x5355;&#x8BCD;&#xFF0C;&#x4EE5;<code>.</code>&#x5212;&#x5206;&#xFF0C;&#x5355;&#x8BCD;&#x53EF;&#x4EE5;&#x662F;&#x4EFB;&#x610F;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x7ECF;&#x5E38;&#x547D;&#x540D;&#x4E3A;&#x548C;&#x6D88;&#x606F;&#x6709;&#x6240;&#x5173;&#x8054;&#x3002;&#x4E00;&#x4E9B;&#x6709;&#x6548;&#x7684;<code>routing_key</code>&#xFF0C;&#x6BD4;&#x5982;<code>stock.usd.nyse</code>, <code>nyse.vmw</code>, <code>quick.orange.rabbit</code>. &#x6700;&#x5927;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x4E3A;255&#x5B57;&#x8282;&#x3002;</p>
+<p><code>binding_key</code>&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x540C;&#x6837;&#x7684;&#x683C;&#x5F0F;&#x3002;<code>topic exchange</code>&#x80CC;&#x540E;&#x7684;&#x903B;&#x8F91;&#x548C;<code>direct exchange</code>&#x5F88;&#x50CF;&#xFF0C;&#x4E00;&#x4E2A;&#x5E26;&#x6709;&#x7279;&#x5B9A;<code>routing_key</code>&#x7684;&#x6D88;&#x606F;&#x4F1A;&#x88AB;&#x53D1;&#x9001;&#x5230;&#x4E0E;<code>binding_key</code>&#x5339;&#x914D;&#x7684;&#x6240;&#x6709;&#x7684;&#x961F;&#x5217;&#x4E0A;&#x3002;</p>
+<p>&#x7136;&#x800C;&#x6709;&#x4E24;&#x79CD;&#x6BD4;&#x8F83;&#x91CD;&#x8981;&#x7684;binding_key&#x4F8B;&#x5B50;</p>
+<ul>
+<li>* &#x4EE3;&#x8868;&#x5339;&#x914D;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;</li>
+<li># &#x4EE3;&#x8868;&#x5339;&#x914D;&#x591A;&#x4E2A;&#x5355;&#x8BCD;</li>
+</ul>
+<p><img src="images/topics.png" alt="topics" style="zoom:50%;"></p>
+<blockquote>
+<p>In this example, we&apos;re going to send messages which all describe animals. The messages will be sent with a routing key that consists of three words (two dots). The first word in the routing key will describe a celerity, second a colour and third a species: &quot;<celerity>.<colour>.<species>&quot;.</species></colour></celerity></p>
+<p>We created three bindings: Q1 is bound with binding key &quot;*.orange.*&quot; and Q2 with &quot;*.*.rabbit&quot; and &quot;lazy.#&quot;.</p>
+<p>These bindings can be summarised as:</p>
+<ul>
+<li><p>Q1 is interested in all the orange animals.</p>
+</li>
+<li><p>Q2 wants to hear everything about rabbits, and everything about lazy animals.</p>
+</li>
+</ul>
+</blockquote>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x8981;&#x53D1;&#x9001;&#x4E00;&#x4E9B;&#x63CF;&#x8FF0;&#x52A8;&#x7269;&#x7684;&#x6D88;&#x606F;&#xFF0C;&#x8FD9;&#x4E9B;&#x6D88;&#x606F;&#x4F1A;&#x4EE5;&#x5305;&#x542B;&#x4E09;&#x4E2A;&#x5355;&#x8BCD;(&#x4E24;&#x4E2A;&#x70B9;)&#x7684;routing_key&#x6765;&#x8868;&#x793A;&#xFF0C;</p>
+<p>&#x7B2C;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;&#x8868;&#x793A;&#x654F;&#x6377;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x8868;&#x793A;&#x989C;&#x8272;&#xFF0C;&#x7B2C;&#x4E09;&#x4E2A;&#x8868;&#x793A;&#x7269;&#x79CD;&#xFF0C;&quot;<celerity>.<colour>.<species>&quot;.</species></colour></celerity></p>
+<p>&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E86;&#x4E09;&#x4E2A;&#x7ED1;&#x5B9A;&#xFF0C; Q1 &#x7684; binding key &quot;*.orange.*&quot;  Q2 &#x7ED1;&#x5B9A; &quot;*.*.rabbit&quot; &#x548C; &quot;lazy.#&quot;</p>
+<p>&#x8FD9;&#x4E9B;&#x7ED1;&#x5B9A;&#x53EF;&#x4EE5;&#x6982;&#x62EC;&#x672A;&#xFF1A;</p>
+<ul>
+<li>Q1&#x5173;&#x6CE8;&#x6A58;&#x8272;&#x7684;&#x52A8;&#x7269;&#x7684;&#x884C;&#x4E3A;</li>
+<li>Q2&#x5173;&#x6CE8;&#x6240;&#x6709;&#x5173;&#x4E8E;&#x5154;&#x5B50;&#x548C;&#x6240;&#x6709;&#x61D2;&#x60F0;&#x7684;&#x52A8;&#x7269;&#x7684;&#x4FE1;&#x606F;</li>
+</ul>
+<blockquote>
+<p>A message with a routing key set to &quot;quick.orange.rabbit&quot; will be delivered to both queues. Message &quot;lazy.orange.elephant&quot; also will go to both of them. On the other hand &quot;quick.orange.fox&quot; will only go to the first queue, and &quot;lazy.brown.fox&quot; only to the second. &quot;lazy.pink.rabbit&quot; will be delivered to the second queue only once, even though it matches two bindings. &quot;quick.brown.fox&quot; doesn&apos;t match any binding so it will be discarded.</p>
+<p>What happens if we break our contract and send a message with one or four words, like &quot;orange&quot; or &quot;quick.orange.male.rabbit&quot;? Well, these messages won&apos;t match any bindings and will be lost.</p>
+<p>On the other hand &quot;lazy.orange.male.rabbit&quot;, even though it has four words, will match the last binding and will be delivered to the second queue.</p>
+</blockquote>
+<p>routing_key=quick.orange.rabbit&#x7684;&#x6D88;&#x606F;&#x4F1A;&#x88AB;&#x53D1;&#x9001;&#x5230;&#x4E24;&#x4E2A;&#x961F;&#x5217;&#xFF0C;quick.orange.fox &#x53EA;&#x4F1A;&#x53D1;&#x5230;&#x7B2C;&#x4E00;&#x4E2A;&#x961F;&#x5217;&#xFF0C;lazy.brown.fox&#x4F1A;&#x53D1;&#x5230;&#x7B2C;&#x4E8C;&#x4E2A;&#x961F;&#x5217;&#xFF0C;lazy.pink.rabbit&#x53EA;&#x4F1A;&#x7ED9;&#x7B2C;&#x4E8C;&#x4E2A;&#x961F;&#x5217;&#x53D1;&#x9001;&#x4E00;&#x6B21;&#xFF0C;&#x867D;&#x7136;&#x5B83;&#x8DDF;&#x4E24;&#x4E2A;binding_key&#x90FD;&#x5339;&#x914D;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x6BC1;&#x6389;&#x5408;&#x7EA6;&#xFF0C;&#x53D1;&#x9001;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;&#x6216;&#x8005;&#x56DB;&#x4E2A;&#x5355;&#x8BCD;&#x7684;&#x6D88;&#x606F;&#xFF0C;&#x4F1A;&#x53D1;&#x751F;&#x4EC0;&#x4E48;&#xFF1F; &quot;orange&quot; &#x548C; &quot;quick.orange.male.rabbit&quot; &#x90FD;&#x4F1A;&#x88AB;&#x4E22;&#x5F03;&#x3002;&#xFF08;* &#x53EA;&#x80FD;&#x5339;&#x914D;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;&#xFF09;</p>
+<p>&#x4F46;&#x662F;lazy.orange.male.rabbit&#x4F1A;&#x88AB;&#x53D1;&#x9001;&#x5230;&#x7B2C;&#x4E8C;&#x4E2A;&#x961F;&#x5217;&#x3002;&#xFF08;&#x56E0;&#x4E3A;#&#x80FD;&#x5339;&#x914D;&#x591A;&#x4E2A;&#x5355;&#x8BCD;&#xFF09;</p>
+<h5 id="note-topic-exchange">note: Topic exchange</h5>
+<blockquote>
+<p>Topic exchange is powerful and can behave like other exchanges.</p>
+<p>When a queue is bound with &quot;#&quot; (hash) binding key - it will receive all the messages, regardless of the routing key - like in fanout exchange.</p>
+<p>When special characters &quot;*&quot; (star) and &quot;#&quot; (hash) aren&apos;t used in bindings, the topic exchange will behave just like a direct one.</p>
+</blockquote>
+<p>topic exchange&#x975E;&#x5E38;&#x7684;&#x5F3A;&#x5927;&#xFF0C;&#x80FD;&#x62E5;&#x6709;&#x5176;&#x4ED6;exchange_type&#x7684;&#x529F;&#x80FD;&#x3002;</p>
+<p>&#x5F53;&#x961F;&#x5217;&#x88AB;&#x7ED1;&#x5B9A;&#x7684;binding_key &#x662F; #&#x65F6;(&#x4EE3;&#x7801;&#x4E2D;&#x4ECD;&#x7136;&#x662F;routing_key=&apos;#&apos;)&#xFF0C;&#x5B83;&#x5C06;&#x63A5;&#x6536;&#x6240;&#x6709;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5FFD;&#x7565;&#x751F;&#x4EA7;&#x8005;&#x58F0;&#x660E;&#x7684;routing_key&#xFF0C;&#x5C31;&#x50CF;fanout&#x4E00;&#x6837;&#x3002;</p>
+<p>&#x5F53; * &#x548C; # &#x90FD;&#x6CA1;&#x6709;&#x88AB;&#x7528;&#x5230;&#x65F6;&#xFF0C;&#x529F;&#x80FD;&#x5C31;&#x548C;direct&#x4E00;&#x6A21;&#x4E00;&#x6837;&#x3002;</p>
+<h4 id="&#x793A;&#x4F8B;&#x4EE3;&#x7801;">&#x793A;&#x4F8B;&#x4EE3;&#x7801;</h4>
+<blockquote>
+<p>We&apos;re going to use a topic exchange in our logging system. We&apos;ll start off with a working assumption that the routing keys of logs will have two words: &quot;<facility>.<severity>&quot;.</severity></facility></p>
+</blockquote>
+<p>routing_key&#x5305;&#x542B;&#x4E24;&#x4E2A;&#x5355;&#x8BCD;&#xFF0C;<facility>.<severity>  &#x8BBE;&#x5907;<code>.</code>&#x4E25;&#x91CD;&#x6027;</severity></facility></p>
+<p><code>emit_log_topic.py</code></p>
+<pre><code class="lang-python"><span class="hljs-comment">#!/usr/bin/env python</span>
+<span class="hljs-keyword">import</span> pika
+<span class="hljs-keyword">import</span> sys
+
+connection = pika.BlockingConnection(
+    pika.ConnectionParameters(host=<span class="hljs-string">&apos;localhost&apos;</span>))
+channel = connection.channel()
+
+channel.exchange_declare(exchange=<span class="hljs-string">&apos;topic_logs&apos;</span>, exchange_type=<span class="hljs-string">&apos;topic&apos;</span>)
+
+routing_key = sys.argv[<span class="hljs-number">1</span>] <span class="hljs-keyword">if</span> len(sys.argv) &gt; <span class="hljs-number">2</span> <span class="hljs-keyword">else</span> <span class="hljs-string">&apos;anonymous.info&apos;</span>
+message = <span class="hljs-string">&apos; &apos;</span>.join(sys.argv[<span class="hljs-number">2</span>:]) <span class="hljs-keyword">or</span> <span class="hljs-string">&apos;Hello World!&apos;</span>
+channel.basic_publish(
+    exchange=<span class="hljs-string">&apos;topic_logs&apos;</span>, routing_key=routing_key, body=message)
+print(<span class="hljs-string">&quot; [x] Sent %r:%r&quot;</span> % (routing_key, message))
+connection.close()
+</code></pre>
+<p><code>receive_logs_topic.py</code></p>
+<pre><code class="lang-python"><span class="hljs-comment">#!/usr/bin/env python</span>
+<span class="hljs-keyword">import</span> pika
+<span class="hljs-keyword">import</span> sys
+
+connection = pika.BlockingConnection(
+    pika.ConnectionParameters(host=<span class="hljs-string">&apos;localhost&apos;</span>))
+channel = connection.channel()
+
+channel.exchange_declare(exchange=<span class="hljs-string">&apos;topic_logs&apos;</span>, exchange_type=<span class="hljs-string">&apos;topic&apos;</span>)
+
+result = channel.queue_declare(<span class="hljs-string">&apos;&apos;</span>, exclusive=<span class="hljs-keyword">True</span>)
+queue_name = result.method.queue
+
+binding_keys = sys.argv[<span class="hljs-number">1</span>:]
+<span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> binding_keys:
+    sys.stderr.write(<span class="hljs-string">&quot;Usage: %s [binding_key]...\n&quot;</span> % sys.argv[<span class="hljs-number">0</span>])
+    sys.exit(<span class="hljs-number">1</span>)
+
+<span class="hljs-keyword">for</span> binding_key <span class="hljs-keyword">in</span> binding_keys:
+    channel.queue_bind(
+        exchange=<span class="hljs-string">&apos;topic_logs&apos;</span>, queue=queue_name, routing_key=binding_key)
+
+print(<span class="hljs-string">&apos; [*] Waiting for logs. To exit press CTRL+C&apos;</span>)
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">callback</span><span class="hljs-params">(ch, method, properties, body)</span>:</span>
+    print(<span class="hljs-string">&quot; [x] %r:%r&quot;</span> % (method.routing_key, body))
+
+
+channel.basic_consume(
+    queue=queue_name, on_message_callback=callback, auto_ack=<span class="hljs-keyword">True</span>)
+
+channel.start_consuming()
+</code></pre>
+<h5 id="&#x6D88;&#x8D39;&#x8005;">&#x6D88;&#x8D39;&#x8005;</h5>
+<p>&#x63A5;&#x6536;&#x6240;&#x6709;&#x6D88;&#x606F;</p>
+<pre><code class="lang-bash">python receive_logs_topic.py <span class="hljs-string">&quot;#&quot;</span>
+</code></pre>
+<p>&#x63A5;&#x6536;&#x6765;&#x81EA;&#x8BBE;&#x5907;kern&#x7684;&#x65E5;&#x5FD7;</p>
+<pre><code class="lang-bash">python receive_logs_topic.py <span class="hljs-string">&quot;kern.*&quot;</span>
+</code></pre>
+<p>&#x63A5;&#x6536;&#x6240;&#x6709;&#x4E25;&#x91CD;&#x6027;&#x4E3A;critical&#x7684;&#x65E5;&#x5FD7;</p>
+<pre><code class="lang-bash">python receive_logs_topic.py <span class="hljs-string">&quot;*.critical&quot;</span>
+</code></pre>
+<p>&#x4E00;&#x4E2A;&#x961F;&#x5217;&#x521B;&#x5EFA;&#x591A;&#x4E2A;&#x7ED1;&#x5B9A;</p>
+<pre><code class="lang-bash">python receive_logs_topic.py <span class="hljs-string">&quot;kern.*&quot;</span> <span class="hljs-string">&quot;*.critical&quot;</span>
+</code></pre>
+<h5 id="&#x751F;&#x4EA7;&#x8005;">&#x751F;&#x4EA7;&#x8005;</h5>
+<p>&#x751F;&#x4EA7;&#x6D88;&#x606F;</p>
+<pre><code class="lang-bash">python emit_<span class="hljs-built_in">log</span>_topic.py <span class="hljs-string">&quot;kern.critical&quot;</span> <span class="hljs-string">&quot;A critical kernel error&quot;</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="routing.html" class="navigation navigation-prev " aria-label="Previous page: Routing">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="rpc.html" class="navigation navigation-next " aria-label="Next page: RPC">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Topics","level":"1.2.5","depth":2,"next":{"title":"RPC","level":"1.2.6","depth":2,"path":"queue/rpc.md","ref":"queue/rpc.md","articles":[]},"previous":{"title":"Routing","level":"1.2.4","depth":2,"path":"queue/routing.md","ref":"queue/routing.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"queue/topics.md","mtime":"2020-04-21T12:21:53.670Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-21T12:33:21.744Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
