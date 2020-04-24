@@ -10,13 +10,8 @@
   * [RPC](https://jacsice.github.io/rabbitmq-cn/queue/rpc.html)
   * [Publisher Confirms](https://jacsice.github.io/rabbitmq-cn/queue/publisher_confirms.html)
 
-* 服务端文档(Server Documentation)
-  * [Configuration](server/configuration.md)
-
 * 分布式RabbitMQ(Distributed RabbitMQ)
-  * [概述（Mirroring, Shovel, Federation Overview）](https://jacsice.github.io/rabbitmq-cn/distribute/overview.html)
+  * [Mirroring, Shovel, Federation Overview](https://jacsice.github.io/rabbitmq-cn/distribute/overview.html)
   * [Clustering](https://jacsice.github.io/rabbitmq-cn/distribute/clustering.html)
-  * [Queue Mirroring](https://www.rabbitmq.com/ha.html)
-  * [Reliable Message Delivery](https://www.rabbitmq.com/reliability.html)
-  *  [highly available](https://www.rabbitmq.com/pacemaker.html) 
+  * [Highly Available](https://jacsice.github.io/rabbitmq-cn/highly_available.html)
 

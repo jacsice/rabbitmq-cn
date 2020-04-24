@@ -57,6 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="highly_available.html" />
+    
     
     <link rel="prev" href="overview.html" />
     
@@ -210,39 +212,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" >
-            
-                <span>
-            
-                    
-                    服务端文档(Server Documentation)
-            
-                </span>
-            
 
-            
-            <ul class="articles">
-                
     
-        <li class="chapter " data-level="1.3.1" data-path="../server/configuration.md">
-            
-                <span>
-            
-                    
-                    Configuration
-            
-                </a>
-            
-
-            
-        </li>
+        
+        <li class="divider"></li>
+        
+        
     
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4" >
+        <li class="chapter " data-level="2.1" >
             
                 <span>
             
@@ -256,12 +233,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="overview.html">
+        <li class="chapter " data-level="2.1.1" data-path="overview.html">
             
                 <a href="overview.html">
             
                     
-                    概述（Mirroring, Shovel, Federation Overview）
+                    Mirroring, Shovel, Federation Overview
             
                 </a>
             
@@ -269,7 +246,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.2" data-path="clustering.html">
+        <li class="chapter active" data-level="2.1.2" data-path="clustering.html">
             
                 <a href="clustering.html">
             
@@ -282,38 +259,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" >
+        <li class="chapter " data-level="2.1.3" data-path="highly_available.html">
             
-                <a target="_blank" href="https://www.rabbitmq.com/ha.html">
-            
-                    
-                    Queue Mirroring
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4.4" >
-            
-                <a target="_blank" href="https://www.rabbitmq.com/reliability.html">
+                <a href="highly_available.html">
             
                     
-                    Reliable Message Delivery
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4.5" >
-            
-                <a target="_blank" href="https://www.rabbitmq.com/pacemaker.html">
-            
-                    
-                    highly available
+                    Highly Available
             
                 </a>
             
@@ -406,9 +357,9 @@
 </ul>
 <p>RabbitMQ&#x96C6;&#x7FA4;&#x662F;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x903B;&#x8F91;&#x5206;&#x7EC4;&#xFF0C;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x5171;&#x4EAB;&#x7528;&#x6237;&#x3001;&#x865A;&#x62DF;&#x4E3B;&#x673A;&#x3001;&#x961F;&#x5217;&#x3001;exchanges&#x3001;bindings&#x3001;&#x8FD0;&#x884C;&#x65F6;&#x53C2;&#x6570;&#x548C;&#x5176;&#x4ED6;&#x5206;&#x5E03;&#x5F0F;&#x72B6;&#x6001;&#x3002;</p>
 <h4 id="&#x96C6;&#x7FA4;&#x7EC4;&#x4EF6;">&#x96C6;&#x7FA4;&#x7EC4;&#x4EF6;</h4>
+<h4 id="cluster-formation"><a href="https://www.rabbitmq.com/clustering.html#cluster-formation" target="_blank">Cluster Formation</a></h4>
+<h4 id="ways-of-forming-a-cluster"><a href="https://www.rabbitmq.com/clustering.html#cluster-formation-options" target="_blank">Ways of Forming a Cluster</a></h4>
 <blockquote>
-<h2 id="cluster-formation"><a href="https://www.rabbitmq.com/clustering.html#cluster-formation" target="_blank">Cluster Formation</a></h2>
-<h3 id="ways-of-forming-a-cluster"><a href="https://www.rabbitmq.com/clustering.html#cluster-formation-options" target="_blank">Ways of Forming a Cluster</a></h3>
 <p>A RabbitMQ cluster can formed in a number of ways:</p>
 <ul>
 <li>Declaratively by listing cluster nodes in <a href="https://www.rabbitmq.com/configure.html" target="_blank">config file</a></li>
@@ -431,8 +382,8 @@
 <p>&#x66F4;&#x591A;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x8BF7;&#x770B;<a href="https://www.rabbitmq.com/cluster-formation.html" target="_blank">Cluster Formation guide</a> </p>
 <p>&#x96C6;&#x7FA4;&#x7684;&#x7EC4;&#x6210;&#x53EF;&#x4EE5;&#x52A8;&#x6001;&#x7684;&#x6539;&#x53D8;&#x3002;&#x6240;&#x6709;RabbitMQ broker&#x4E00;&#x5F00;&#x59CB;&#x90FD;&#x8FD0;&#x884C;&#x5728;&#x5355;&#x4E2A;&#x8282;&#x70B9;&#x4E0A;&#x3002;&#x53EF;&#x4EE5;&#x5C06;&#x8FD9;&#x4E9B;&#x8282;&#x70B9;&#x52A0;&#x5165;&#x5230;&#x96C6;&#x7FA4;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x8FD8;&#x662F;&#x72EC;&#x7ACB;&#x7684;broker&#x3002;</p>
 <h4 id="&#x8282;&#x70B9;&#x540D;&#x5B57;">&#x8282;&#x70B9;&#x540D;&#x5B57;</h4>
+<h4 id="node-names-identifiers"><a href="https://www.rabbitmq.com/clustering.html#node-names" target="_blank">Node Names (Identifiers)</a></h4>
 <blockquote>
-<h3 id="node-names-identifiers"><a href="https://www.rabbitmq.com/clustering.html#node-names" target="_blank">Node Names (Identifiers)</a></h3>
 <p>RabbitMQ nodes are identified by node names. A node name consists of two parts, a prefix (usually rabbit) and hostname. For example,<code>rabbit@node1.messaging.svc.local</code> is a node name with the prefix of rabbit and hostname of node1.messaging.svc.local.</p>
 <p>Node names in a cluster must be unique. If more than one node is running on a given host (this is usually the case in development and QA environments), they must use different prefixes, e.g. rabbit1@hostname and rabbit2@hostname.</p>
 <p>In a cluster, nodes identify and contact each other using node names. This means that the hostname part of every node name <a href="https://www.rabbitmq.com/clustering.html#hostname-resolution-requirement" target="_blank">must resolve</a>. <a href="https://www.rabbitmq.com/cli.html" target="_blank">CLI tools</a> also identify and address nodes using node names.</p>
@@ -446,9 +397,11 @@
 <p>&#x5F53;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x542F;&#x52A8;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5B83;&#x4F1A;&#x5148;&#x68C0;&#x67E5;&#x662F;&#x5426;&#x6307;&#x5B9A;&#x4E86;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x540D;&#x5B57;&#xFF0C;&#x901A;&#x8FC7;RABBITMQ_NODENAME&#x8FD9;&#x4E2A;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x6765;&#x6307;&#x5B9A;&#xFF0C;&#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x503C;&#x6CA1;&#x6709;&#x88AB;&#x660E;&#x786E;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x8282;&#x70B9;&#x4F1A;&#x5206;&#x6790;&#x5B83;&#x7684;&#x4E3B;&#x673A;&#x540D;&#xFF0C;&#x5E76;&#x52A0;&#x4E0A;rabbit&#x6765;&#x7EC4;&#x6210;&#x5B83;&#x7684;&#x8282;&#x70B9;&#x540D;&#x3002;</p>
 <p>&#x5982;&#x679C;&#x7CFB;&#x7EDF;&#x4F7F;&#x7528;&#x5B8C;&#x5168;&#x9650;&#x5B9A;&#x57DF;&#x540D;(FQDNs)&#x4F5C;&#x4E3A;&#x4E3B;&#x673A;&#x540D;&#xFF0C;&#x5219;RabbitMQ&#x8282;&#x70B9;&#x548C;CLI&#x5DE5;&#x5177;&#x5FC5;&#x987B;&#x914D;&#x7F6E;RABBITMQ_USE_LONGNAME&#x4E3A;true</p>
 <p>&#x5BF9;&#x4E8E;CLI&#x5DE5;&#x5177;&#xFF0C;RABBITMQ_USE_LONGNAME&#x5FC5;&#x987B;&#x88AB;&#x8BBE;&#x7F6E;&#x6216;&#x8005;--longnames&#x8981;&#x88AB;&#x6307;&#x5B9A;</p>
+<h4 id="&#x96C6;&#x7FA4;&#x914D;&#x7F6E;">&#x96C6;&#x7FA4;&#x914D;&#x7F6E;</h4>
+<h5 id="&#x4E3B;&#x673A;&#x540D;&#x89E3;&#x6790;">&#x4E3B;&#x673A;&#x540D;&#x89E3;&#x6790;</h5>
+<h4 id="cluster-formation-requirements"><a href="https://www.rabbitmq.com/clustering.html#cluster-formation-requirements" target="_blank">Cluster Formation Requirements</a></h4>
+<h4 id="hostname-resolution"><a href="https://www.rabbitmq.com/clustering.html#hostname-resolution-requirement" target="_blank">Hostname Resolution</a></h4>
 <blockquote>
-<h2 id="cluster-formation-requirements"><a href="https://www.rabbitmq.com/clustering.html#cluster-formation-requirements" target="_blank">Cluster Formation Requirements</a></h2>
-<h3 id="hostname-resolution"><a href="https://www.rabbitmq.com/clustering.html#hostname-resolution-requirement" target="_blank">Hostname Resolution</a></h3>
 <p>RabbitMQ nodes address each other using domain names, either short or fully-qualified (FQDNs). Therefore hostnames of all cluster members must be resolvable from all cluster nodes, as well as machines on which command line tools such as rabbitmqctl might be used.</p>
 <p>Hostname resolution can use any of the standard OS-provided methods:</p>
 <ul>
@@ -458,8 +411,6 @@
 <p>In more restrictive environments, where DNS record or hosts file modification is restricted, impossible or undesired, <a href="http://erlang.org/doc/apps/erts/inet_cfg.html" target="_blank">Erlang VM can be configured to use alternative hostname resolution methods</a>, such as an alternative DNS server, a local file, a non-standard hosts file location, or a mix of methods. Those methods can work in concert with the standard OS hostname resolution methods.</p>
 <p>To use FQDNs, see RABBITMQ_USE_LONGNAME in the <a href="https://www.rabbitmq.com/configure.html#supported-environment-variables" target="_blank">Configuration guide</a>. See <a href="https://www.rabbitmq.com/clustering.html#node-names" target="_blank">Node Names</a> above.</p>
 </blockquote>
-<p>&#x96C6;&#x7FA4;&#x914D;&#x7F6E;</p>
-<p>&#x4E3B;&#x673A;&#x540D;&#x89E3;&#x6790;</p>
 <p>RabbitMQ&#x8282;&#x70B9;&#x4E4B;&#x95F4;&#x901A;&#x8FC7;&#x57DF;&#x540D;&#x6765;&#x5B9A;&#x4F4D;&#x5F7C;&#x6B64;&#xFF0C;&#x77ED;&#x8FDE;&#x63A5;&#x6216;&#x8005;FQDNs&#x90FD;&#x53EF;&#x4EE5;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x6240;&#x6709;&#x7FA4;&#x96C6;&#x6210;&#x5458;&#x7684;&#x4E3B;&#x673A;&#x540D;&#x4EE5;&#x53CA;&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#xFF08;&#x4F8B;&#x5982;rabbitmqctl&#xFF09;&#x7684;&#x673A;&#x5668;&#x90FD;&#x5FC5;&#x987B;&#x662F;&#x53EF;&#x89E3;&#x6790;&#x7684;&#x3002;</p>
 <p>&#x53EF;&#x4EE5;&#x7528;&#x7CFB;&#x7EDF;&#x63D0;&#x4F9B;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x89E3;&#x6790;&#x4E3B;&#x673A;&#x540D;</p>
 <ul>
@@ -469,8 +420,8 @@
 <p>&#x5728;&#x66F4;&#x5177;&#x9650;&#x5236;&#x6027;&#x7684;&#x73AF;&#x5883;&#x4E2D;&#xFF0C;DNS&#x8BB0;&#x5F55;&#x6216;&#x4E3B;&#x673A;&#x6587;&#x4EF6;&#x7684;&#x4FEE;&#x6539;&#x90FD;&#x662F;&#x53D7;&#x5230;&#x9650;&#x5236;&#x7684;&#xFF0C;&#x4E0D;&#x80FD;&#x5B58;&#x5728;&#x7684;&#xFF0C;&#x4E0D;&#x5E0C;&#x671B;&#x6709;&#x7684;</p>
 <p>pass</p>
 <h4 id="&#x7AEF;&#x53E3;&#x8BBF;&#x95EE;">&#x7AEF;&#x53E3;&#x8BBF;&#x95EE;</h4>
+<h5 id="port-access"><a href="https://www.rabbitmq.com/clustering.html#ports" target="_blank">Port Access</a></h5>
 <blockquote>
-<h2 id="port-access"><a href="https://www.rabbitmq.com/clustering.html#ports" target="_blank">Port Access</a></h2>
 <p>RabbitMQ nodes bind to ports (open server TCP sockets) in order to accept client and CLI tool connections. Other processes and tools such as SELinux may prevent RabbitMQ from binding to a port. When that happens, the node will fail to start.</p>
 <p>CLI tools, client libraries and RabbitMQ nodes also open connections (client TCP sockets). Firewalls can prevent nodes and CLI tools from communicating with each other. Make sure the following ports are accessible:</p>
 <ul>
@@ -498,11 +449,11 @@
 </li>
 </ul>
 <h4 id="&#x96C6;&#x7FA4;&#x4E2D;&#x7684;&#x8282;&#x70B9;">&#x96C6;&#x7FA4;&#x4E2D;&#x7684;&#x8282;&#x70B9;</h4>
+<h5 id="nodes-in-a-cluster"><a href="https://www.rabbitmq.com/clustering.html#cluster-membership" target="_blank">Nodes in a Cluster</a></h5>
 <blockquote>
-<h2 id="nodes-in-a-cluster"><a href="https://www.rabbitmq.com/clustering.html#cluster-membership" target="_blank">Nodes in a Cluster</a></h2>
-<h3 id="what-is-replicated"><a href="https://www.rabbitmq.com/clustering.html#overview-what-is-replicated" target="_blank">What is Replicated?</a></h3>
+<p><a href="https://www.rabbitmq.com/clustering.html#overview-what-is-replicated" target="_blank">What is Replicated?</a></p>
 <p>All data/state required for the operation of a RabbitMQ broker is replicated across all nodes. An exception to this are message queues, which by default reside on one node, though they are visible and reachable from all nodes. To replicate queues across nodes in a cluster, see the documentation on <a href="https://www.rabbitmq.com/ha.html" target="_blank">high availability</a> (note: this guide is a prerequisite for mirroring).</p>
-<h3 id="nodes-are-equal-peers"><a href="https://www.rabbitmq.com/clustering.html#peer-equality" target="_blank">Nodes are Equal Peers</a></h3>
+<h5 id="nodes-are-equal-peers"><a href="https://www.rabbitmq.com/clustering.html#peer-equality" target="_blank">Nodes are Equal Peers</a></h5>
 <p>Some distributed systems have leader and follower nodes. This is generally not true for RabbitMQ. All nodes in a RabbitMQ cluster are equal peers: there are no special nodes in RabbitMQ core. This topic becomes more nuanced when <a href="https://www.rabbitmq.com/ha.html" target="_blank">queue mirroring</a> and plugins are taken into consideration but for most intents and purposes, all cluster nodes should be considered equal</p>
 <p>Many <a href="https://www.rabbitmq.com/cli.html" target="_blank">CLI tool</a> operations can be executed against any node. An <a href="https://www.rabbitmq.com/management.html" target="_blank">HTTP API</a> client can target any cluster node.</p>
 <p>Individual plugins can designate (elect) certain nodes to be &quot;special&quot; for a period of time. For example, <a href="https://www.rabbitmq.com/federation.html" target="_blank">federation links</a> are colocated on a particular cluster node. Should that node fail, the links will be restarted on a different node.</p>
@@ -516,7 +467,7 @@
 <p>&#x72EC;&#x7ACB;&#x7684;&#x63D2;&#x4EF6;&#x53EF;&#x4EE5;&#x5728;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x5185;&#x6307;&#x5B9A;(&#x9009;&#x62E9;)&#x67D0;&#x4E9B;&#x8282;&#x70B9;&#x4E3A;&#x201C;&#x7279;&#x6B8A;&#x201D;&#x8282;&#x70B9;&#x3002;&#x4F8B;&#x5982;&#xFF0C;federation links &#x5728;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x96C6;&#x7FA4;&#x8282;&#x70B9;&#x4E0A;&#x8FDB;&#x884C;&#x534F;&#x4F5C;&#x3002;&#x5982;&#x679C;&#x8BE5;&#x8282;&#x70B9;&#x5931;&#x8D25;&#xFF0C;&#x5C06;&#x5728;&#x53E6;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x4E0A;&#x91CD;&#x65B0;&#x542F;&#x52A8;&#x94FE;&#x63A5;&#x3002;?</p>
 <h4 id="&#x8282;&#x70B9;&#x4E4B;&#x95F4;&#x5982;&#x4F55;&#x76F8;&#x4E92;&#x8BA4;&#x8BC1;&#xFF1A;erlang-cookie">&#x8282;&#x70B9;&#x4E4B;&#x95F4;&#x5982;&#x4F55;&#x76F8;&#x4E92;&#x8BA4;&#x8BC1;&#xFF1A;Erlang Cookie</h4>
 <blockquote>
-<h3 id="how-cli-tools-authenticate-to-nodes-and-nodes-to-each-other-the-erlang-cookie"><a href="https://www.rabbitmq.com/clustering.html#erlang-cookie" target="_blank">How CLI Tools Authenticate to Nodes (and Nodes to Each Other): the Erlang Cookie</a></h3>
+<p><a href="https://www.rabbitmq.com/clustering.html#erlang-cookie" target="_blank">How CLI Tools Authenticate to Nodes (and Nodes to Each Other): the Erlang Cookie</a></p>
 <p>RabbitMQ nodes and CLI tools (e.g. rabbitmqctl) use a cookie to determine whether they are allowed to communicate with each other. For two nodes to be able to communicate they must have the same shared secret called the Erlang cookie. The cookie is just a string of alphanumeric characters up to 255 characters in size. It is usually stored in a local file. The file must be only accessible to the owner (e.g. have UNIX permissions of 600 or similar). Every cluster node must have the same cookie.</p>
 <p>If the file does not exist, Erlang VM will try to create one with a randomly generated value when the RabbitMQ server starts up. Using such generated cookie files are appropriate in development environments only. Since each node will generate its own value independently, this strategy is not really viable in a <a href="https://www.rabbitmq.com/clustering.html" target="_blank">clustered environment</a>.</p>
 <p>Erlang cookie generation should be done at cluster deployment stage, ideally using automation and orchestration tools such as Chef, Puppet, BOSH, Docker or similar.</p>
@@ -526,16 +477,18 @@
 <p>Erlang cookie&#x7684;&#x751F;&#x6210;&#x5E94;&#x5728;&#x96C6;&#x7FA4;&#x90E8;&#x7F72;&#x9636;&#x6BB5;&#x5B8C;&#x6210;&#xFF0C;&#x7406;&#x60F3;&#x60C5;&#x51B5;&#x4E0B;&#x4F7F;&#x7528;&#x81EA;&#x52A8;&#x5316;&#x548C;&#x7F16;&#x6392;&#x5DE5;&#x5177;&#xFF0C;&#x4F8B;&#x5982;Chef&#xFF0C;Puppet&#xFF0C;BOSH&#xFF0C;Docker&#x6216;&#x7C7B;&#x4F3C;&#x5DE5;&#x5177;&#x3002;</p>
 <h4 id="cookie&#x6587;&#x4EF6;&#x7684;&#x4F4D;&#x7F6E;">cookie&#x6587;&#x4EF6;&#x7684;&#x4F4D;&#x7F6E;</h4>
 <blockquote>
-<h3 id="cookie-file-locations"><a href="https://www.rabbitmq.com/clustering.html#cookie-file-locations" target="_blank">Cookie File Locations</a></h3>
-<h4 id="linux-macos-bsd">Linux, MacOS, *BSD</h4>
+<p><a href="https://www.rabbitmq.com/clustering.html#cookie-file-locations" target="_blank">Cookie File Locations</a></p>
+<h5 id="linux-macos-bsd">Linux, MacOS, *BSD</h5>
 <p>On UNIX systems, the cookie will be typically located in /var/lib/rabbitmq/.erlang.cookie (used by the server) and $HOME/.erlang.cookie (used by CLI tools)</p>
 </blockquote>
-<p>&#x5728;unix&#x7CFB;&#x7EDF;&#x4E0A;&#xFF0C;&#x6587;&#x4EF6;&#x4E00;&#x822C;&#x5728;<code>/var/lib/rabbitmq/.erlang.cookie</code> (&#x670D;&#x52A1;&#x5668;&#x4F7F;&#x7528;) &#x548C; <code>$HOME/.erlang.cookie</code>&#xFF08;CLI&#x5DE5;&#x5177;&#x4F7F;&#x7528;&#xFF09;</p>
+<p>&#x5728;unix&#x7CFB;&#x7EDF;&#x4E0A;&#xFF0C;cookie&#x6587;&#x4EF6;&#x4E00;&#x822C;&#x5728;<code>/var/lib/rabbitmq/.erlang.cookie</code> (&#x670D;&#x52A1;&#x5668;&#x4F7F;&#x7528;) &#x548C; <code>$HOME/.erlang.cookie</code>&#x4E0B;&#xFF08;CLI&#x5DE5;&#x5177;&#x4F7F;&#x7528;&#xFF09;</p>
 <h4 id="&#x8BA4;&#x8BC1;&#x5931;&#x8D25;">&#x8BA4;&#x8BC1;&#x5931;&#x8D25;</h4>
-<h3 id="authentication-failures"><a href="https://www.rabbitmq.com/clustering.html#cli-authentication-failures" target="_blank">Authentication Failures</a></h3>
+<h4 id="authentication-failures"><a href="https://www.rabbitmq.com/clustering.html#cli-authentication-failures" target="_blank">Authentication Failures</a></h4>
 <blockquote>
 <p>When the cookie is misconfigured (for example, not identical), RabbitMQ will log errors such as &quot;Connection attempt from disallowed node&quot; and &quot;Could not auto-cluster&quot;. When a <a href="https://www.rabbitmq.com/cli.html" target="_blank">CLI tool</a> such as rabbitmqctl fails to authenticate with RabbitMQ, the message usually says</p>
 </blockquote>
+<p>&#x5982;&#x679C;&#x5FD8;&#x8BB0;&#x914D;&#x7F6E;cookie&#xFF0C;RabbitMQ&#x4F1A;&#x65E5;&#x5FD7;&#x4E2D;&#x8BB0;&#x5F55;&#x9519;&#x8BEF;&#xFF0C;&#x7C7B;&#x4F3C;<code>Connection attempt from disallowed node</code> &#x548C; <code>Could not auto-cluster</code></p>
+<p>&#x5F53;CLI&#x5DE5;&#x5177;&#x7C7B;&#x4F3C;rabbitmqctl&#x4E0E;RabbitMQ&#x8BA4;&#x8BC1;&#x5931;&#x8D25;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x901A;&#x5E38;&#x4F1A;&#x63D0;&#x793A;&#x5982;&#x4E0B;&#x4FE1;&#x606F;</p>
 <pre><code class="lang-ini">* epmd reports node &apos;rabbit&apos; running on port 25672
 * TCP connection succeeded but Erlang distribution failed
 * suggestion: hostname mismatch?
@@ -544,6 +497,8 @@
 </code></pre>
 <p>An incorrectly placed cookie file or cookie value mismatch are most common scenarios for such failures.</p>
 <p>When a recent Erlang/OTP version is used, authentication failures contain more information and cookie mismatches can be identified better:</p>
+<p>cookie&#x6587;&#x4EF6;&#x7684;&#x4F4D;&#x7F6E;&#x4E0D;&#x5BF9;&#x6216;&#x8005;cookie&#x503C;&#x4E0D;&#x5339;&#x914D;&#x662F;&#x6B64;&#x7C7B;&#x6545;&#x969C;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x573A;&#x666F;&#x3002;</p>
+<p>&#x5F53;&#x4F7F;&#x7528;&#x6700;&#x65B0;&#x7684;Erlang/OTP&#x7248;&#x672C;&#x65F6;&#xFF0C;&#x4F1A;&#x7ED9;&#x51FA;&#x66F4;&#x591A;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x5931;&#x8D25;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x53EF;&#x4EE5;&#x66F4;&#x597D;&#x5730;&#x8BC6;&#x522B;cookie&#x4E0D;&#x5339;&#x914D;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
 <pre><code class="lang-ini">* connected to epmd (port 4369) on warp10
 * epmd reports node &apos;rabbit&apos; running on port 25672
 * TCP connection succeeded but Erlang distribution failed
@@ -551,6 +506,174 @@
 * Authentication failed (rejected by the remote node), please check the Erlang cookie
 </code></pre>
 <p>See the <a href="https://www.rabbitmq.com/cli.html" target="_blank">CLI Tools guide</a> for more information.</p>
+<h4 id="&#x8282;&#x70B9;&#x6570;&#x548C;&#x4EF2;&#x88C1;-&#xFF1F;">&#x8282;&#x70B9;&#x6570;&#x548C;&#x4EF2;&#x88C1; &#xFF1F;</h4>
+<h4 id="node-counts-and-quorum"><a href="https://www.rabbitmq.com/clustering.html#node-count" target="_blank">Node Counts and Quorum</a></h4>
+<blockquote>
+<p>Because several features (e.g. <a href="https://www.rabbitmq.com/quorum-queues.html" target="_blank">quorum queues</a>, <a href="https://www.rabbitmq.com/mqtt.html" target="_blank">client tracking in MQTT</a>) require a consensus between cluster members, odd numbers of cluster nodes are highly recommended: 1, 3, 5, 7 and so on.</p>
+<p>Two node clusters are <em>highly recommended against</em> since it&apos;s impossible for cluster nodes to identify a majority and form a consensus in case of connectivity loss. For example, when the two nodes lose connectivity MQTT client connections won&apos;t be accepted, quorum queues would lose their availability, and so on.</p>
+<p>From the consensus point of view, Four or six node clusters would have the same availability characteristics as three and five node clusters.</p>
+<p>The <a href="https://www.rabbitmq.com/quorum-queues.html" target="_blank">Quorum queue guide</a> covers this topic in more detail.</p>
+</blockquote>
+<p>&#x56E0;&#x4E3A;&#x4E00;&#x4E9B;&#x7279;&#x6027;&#x9700;&#x8981;&#x96C6;&#x7FA4;&#x6210;&#x5458;&#x4E4B;&#x95F4;&#x8FBE;&#x6210;&#x4E00;&#x81F4;&#xFF0C;&#x6240;&#x4EE5;&#x5F3A;&#x70C8;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x5947;&#x6570;&#x4E2A;&#x96C6;&#x7FA4;&#x8282;&#x70B9;:1&#x3001;3&#x3001;5&#x3001;7&#x7B49;&#x7B49;&#x3002;</p>
+<p>&#x5F3A;&#x70C8;&#x5EFA;&#x8BAE;&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x4E24;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x96C6;&#x7FA4;&#xFF0C;&#x56E0;&#x4E3A;&#x96C6;&#x7FA4;&#x8282;&#x70B9;&#x65E0;&#x6CD5;&#x786E;&#x5B9A;&#x591A;&#x6570;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x8FDE;&#x63A5;&#x65AD;&#x5F00;&#x65F6;&#x65E0;&#x6CD5;&#x5F62;&#x6210;&#x5171;&#x8BC6;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5F53;&#x4E24;&#x4E2A;&#x8282;&#x70B9;&#x5931;&#x53BB;&#x8FDE;&#x63A5;&#x65F6;&#xFF0C;&#x5C06;&#x4E0D;&#x63A5;&#x53D7;MQTT&#x5BA2;&#x6237;&#x7AEF;&#x8FDE;&#x63A5;&#xFF0C;&#x4EF2;&#x88C1;&#x961F;&#x5217;&#x5C06;&#x5931;&#x53BB;&#x5176;&#x53EF;&#x7528;&#x6027;&#xFF0C;&#x7B49;&#x7B49;&#x3002;&#xFF1F;</p>
+<p>&#x4ECE;&#x5171;&#x8BC6;&#x7684;&#x89D2;&#x5EA6;&#x6765;&#x770B;&#xFF0C;&#x56DB;&#x4E2A;&#x6216;&#x516D;&#x4E2A;&#x8282;&#x70B9;&#x7FA4;&#x96C6;&#x5C06;&#x5177;&#x6709;&#x4E0E;&#x4E09;&#x4E2A;&#x548C;&#x4E94;&#x4E2A;&#x8282;&#x70B9;&#x7FA4;&#x96C6;&#x76F8;&#x540C;&#x7684;&#x53EF;&#x7528;&#x6027;&#x7279;&#x5F81;&#x3002;</p>
+<p>&#x96C6;&#x7FA4;&#x548C;&#x5BA2;&#x6237;&#x7AEF; &#xFF1F;</p>
+<h4 id="clustering-and-clients"><a href="https://www.rabbitmq.com/clustering.html#clustering-and-clients" target="_blank">Clustering and Clients</a></h4>
+<blockquote>
+<p>Assuming all cluster members are available, a client can connect to any node and perform any operation. Nodes will route operations to the <a href="https://www.rabbitmq.com/ha.html#master-migration-data-locality" target="_blank">queue master node</a> transparently to clients.</p>
+<p>With all supported messaging protocols a client is only connected to one node at a time.</p>
+<p>In case of a node failure, clients should be able to reconnect to a different node, recover their topology and continue operation. For this reason, most client libraries accept a list of endpoints (hostnames or IP addresses) as a connection option. The list of hosts will be used during initial connection as well as connection recovery, if the client supports it. See documentation guides for individual clients to learn more.</p>
+<p>There are scenarios where it may not be possible for a client to transparently continue operations after connecting to a different node. They usually involve <a href="https://www.rabbitmq.com/ha.html#non-mirrored-queue-behavior-on-node-failure" target="_blank">non-mirrored queues hosted on a failed node</a>.</p>
+</blockquote>
+<p>&#x5047;&#x8BBE;&#x6240;&#x6709;&#x7684;&#x96C6;&#x7FA4;&#x6210;&#x5458;&#x90FD;&#x662F;&#x53EF;&#x7528;&#x7684;&#xFF0C;&#x4E00;&#x4E2A;&#x5BA2;&#x6237;&#x7AEF;&#x80FD;&#x8FDE;&#x63A5;&#x5230;&#x4EFB;&#x610F;&#x8282;&#x70B9;&#xFF0C;&#x5E76;&#x6267;&#x884C;&#x4EFB;&#x610F;&#x64CD;&#x4F5C;&#x3002;&#x8282;&#x70B9;&#x4E4B;&#x95F4;&#x4F1A;&#x628A;&#x64CD;&#x4F5C;&#x8DEF;&#x7531;&#x5230;&#x4E3B;&#x961F;&#x5217;&#x8282;&#x70B9;&#x518D;&#x53D1;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x3002;&#xFF1F;</p>
+<p>&#x5BF9;&#x4E8E;&#x6240;&#x6709;&#x652F;&#x6301;&#x6D88;&#x606F;&#x4F20;&#x9012;&#x534F;&#x8BAE;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x4E00;&#x6B21;&#x53EA;&#x80FD;&#x8FDE;&#x63A5;&#x5230;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x3002;</p>
+<p>&#x5728;&#x8282;&#x70B9;&#x5931;&#x8D25;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x5E94;&#x8BE5;&#x80FD;&#x591F;&#x91CD;&#x65B0;&#x8FDE;&#x63A5;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x8282;&#x70B9;&#xFF0C;&#x6062;&#x590D;&#x5B83;&#x4EEC;&#x7684;&#x62D3;&#x6251;&#x5E76;&#x7EE7;&#x7EED;&#x64CD;&#x4F5C;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5927;&#x591A;&#x6570;&#x5BA2;&#x6237;&#x7AEF;&#x63A5;&#x53D7;&#x7EC8;&#x7AEF;&#x5217;&#x8868;(&#x4E3B;&#x673A;&#x540D;&#x6216;IP&#x5730;&#x5740;)&#x4F5C;&#x4E3A;&#x8FDE;&#x63A5;&#x9009;&#x9879;&#x3002;&#x5982;&#x679C;&#x5BA2;&#x6237;&#x7AEF;&#x652F;&#x6301;&#xFF0C;&#x5219;&#x5728;&#x521D;&#x59CB;&#x8FDE;&#x63A5;&#x548C;&#x8FDE;&#x63A5;&#x6062;&#x590D;&#x671F;&#x95F4;&#x5C06;&#x4F7F;&#x7528;&#x4E3B;&#x673A;&#x5217;&#x8868;&#x3002;</p>
+<p>&#xFF1F;</p>
+<p>&#x96C6;&#x7FA4;&#x548C;&#x53EF;&#x89C2;&#x6D4B;&#x6027;</p>
+<h4 id="clustering-and-observability"><a href="https://www.rabbitmq.com/clustering.html#clustering-and-observability" target="_blank">Clustering and Observability</a></h4>
+<blockquote>
+<p>Client connections, channels and queues will be distributed across cluster nodes. Operators need to be able to inspect and <a href="https://www.rabbitmq.com/monitoring.html" target="_blank">monitor</a> such resources across all cluster nodes.</p>
+<p>RabbitMQ <a href="https://www.rabbitmq.com/cli.html" target="_blank">CLI tools</a> such as rabbitmq-diagnostics and rabbitmqctl provide commands that inspect resources and cluster-wide state. Some commands focus on the state of a single node (e.g. rabbitmq-diagnostics environment and rabbitmq-diagnostics status), others inspect cluster-wide state. Some examples of the latter include rabbitmqctl list_connections, rabbitmqctl list_mqtt_connections, rabbitmqctl list_stomp_connections, rabbitmqctl list_users, rabbitmqctl list_vhosts and so on.</p>
+<p>Such &quot;cluster-wide&quot; commands will often contact one node first, discover cluster members and contact them all to retrieve and combine their respective state. For example, rabbitmqctl list_connections will contact all nodes, retrieve their AMQP 0-9-1 and AMQP 1.0 connections, and display them all to the user. The user doesn&apos;t have to manually contact all nodes. Assuming a non-changing state of the cluster (e.g. no connections are closed or opened), two CLI commands executed against two different nodes one after another will produce identical or semantically identical results. &quot;Node-local&quot; commands, however, will not produce identical results since two nodes rarely have identical state: at the very least their node names will be different!</p>
+</blockquote>
+<p><a href="https://www.rabbitmq.com/management.html" target="_blank">Management UI</a> works similarly: a node that has to respond to an HTTP API request will fan out to other cluster members and aggregate their responses. In a cluster with multiple nodes that have management plugin enabled, the operator can use any node to access management UI. The same goes for monitoring tools that use the HTTP API to collect data about the state of the cluster. There is no need to issue a request to every cluster node in turn.</p>
+<h4 id="&#x8282;&#x70B9;&#x5931;&#x8D25;&#x5904;&#x7406;-&#xFF1F;">&#x8282;&#x70B9;&#x5931;&#x8D25;&#x5904;&#x7406; &#xFF1F;</h4>
+<h3 id="node-failure-handling"><a href="https://www.rabbitmq.com/clustering.html#clustering-dealing-with-failure" target="_blank">Node Failure Handling</a></h3>
+<blockquote>
+<p>RabbitMQ brokers tolerate the failure of individual nodes. Nodes can be started and stopped at will, as long as they can contact a cluster member node known at the time of shutdown.</p>
+<p><a href="https://www.rabbitmq.com/ha.html" target="_blank">Queue mirroring</a> allows queue contents to be replicated across multiple cluster nodes.</p>
+<p>Non-mirrored queues can also be used in clusters. Non-mirrored queue <a href="https://www.rabbitmq.com/ha.html#non-mirrored-queue-behavior-on-node-failure" target="_blank">behaviour in case of node failure</a> depends on queue durability.</p>
+<p>RabbitMQ clustering has several modes of dealing with <a href="https://www.rabbitmq.com/partitions.html" target="_blank">network partitions</a>, primarily consistency oriented. Clustering is meant to be used across LAN. It is not recommended to run clusters that span WAN. The <a href="https://www.rabbitmq.com/shovel.html" target="_blank">Shovel</a> or <a href="https://www.rabbitmq.com/federation.html" target="_blank">Federation</a> plugins are better solutions for connecting brokers across a WAN. Note that <a href="https://www.rabbitmq.com/distributed.html" target="_blank">Shovel and Federation are not equivalent to clustering</a>.</p>
+</blockquote>
+<p>RabbitMQ&#x4EE3;&#x7406;&#x53EF;&#x4EE5;&#x5BB9;&#x5FCD;&#x5355;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x5931;&#x8D25;&#x3002;&#x53EF;&#x4EE5;&#x968F;&#x610F;&#x542F;&#x52A8;&#x548C;&#x505C;&#x6B62;&#x8282;&#x70B9;&#xFF0C;&#x53EA;&#x8981;&#x5B83;&#x4EEC;&#x80FD;&#x591F;&#x5728;&#x5173;&#x95ED;&#x65F6;&#x8054;&#x7CFB;&#x5230;&#x4E00;&#x4E2A;&#x5DF2;&#x77E5;&#x7684;&#x96C6;&#x7FA4;&#x6210;&#x5458;&#x8282;&#x70B9;&#x3002;</p>
+<p>&#x961F;&#x5217;&#x955C;&#x50CF;&#x5141;&#x8BB8;&#x8DE8;&#x591A;&#x4E2A;&#x96C6;&#x7FA4;&#x8282;&#x70B9;&#x590D;&#x5236;&#x961F;&#x5217;&#x5185;&#x5BB9;&#x3002;</p>
+<p>&#x975E;&#x955C;&#x50CF;&#x961F;&#x5217;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x96C6;&#x7FA4;&#x4E2D;&#x4F7F;&#x7528;&#x3002;&#x975E;&#x955C;&#x50CF;&#x961F;&#x5217;&#x8282;&#x70B9;&#x5931;&#x8D25;&#x65F6;&#x4F9D;&#x8D56;&#x961F;&#x5217;&#x7684;&#x6301;&#x4E45;&#x7279;&#x6027;&#x3002;</p>
+<h5 id="&#x6307;&#x6807;&#x548C;&#x7EDF;&#x8BA1;&#x6570;&#x636E;">&#x6307;&#x6807;&#x548C;&#x7EDF;&#x8BA1;&#x6570;&#x636E;</h5>
+<h5 id="metrics-and-statistics"><a href="https://www.rabbitmq.com/clustering.html#clustering-and-stats" target="_blank">Metrics and Statistics</a></h5>
+<p>Every node stores and aggregates its own metrics and stats, and provides an API for other nodes to access it. Some stats are cluster-wide, others are specific to individual nodes. Node that responds to an <a href="https://www.rabbitmq.com/management.html" target="_blank">HTTP API</a> request contacts its peers to retrieve their data and then produces an aggregated result.</p>
+<p>In versions older than 3.6.7, <a href="https://www.rabbitmq.com/management.html" target="_blank">RabbitMQ management plugin</a> used a dedicated node for stats collection and aggregation.</p>
+<h5 id="disk-and-ram-nodes"><a href="https://www.rabbitmq.com/clustering.html#cluster-node-types" target="_blank">Disk and RAM Nodes</a></h5>
+<blockquote>
+<p>A node can be a <em>disk node</em> or a <em>RAM node</em>. (<strong>Note:</strong> <em>disk</em> and <em>disc</em> are used interchangeably). RAM nodes store internal database tables in RAM only. This does not include messages, message store indices, queue indices and other node state.</p>
+<p>In the vast majority of cases you want all your nodes to be disk nodes; RAM nodes are a special case that can be used to improve the performance clusters with high queue, exchange, or binding churn. RAM nodes do not provide higher message rates. When in doubt, use disk nodes only.</p>
+<p>Since RAM nodes store internal database tables in RAM only, they must sync them from a peer node on startup. This means that a cluster must contain at least one disk node. It is therefore not possible to manually remove the last remaining disk node in a cluster.</p>
+</blockquote>
+<p>&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x53EF;&#x4EE5;&#x662F;&#x78C1;&#x76D8;&#x8282;&#x70B9;&#x6216;&#x8005;RAM&#x8282;&#x70B9;(note: <em>disk</em>&#x548C;<em>disc</em>&#x53EF;&#x4E92;&#x6362;&#x7684;)&#x3002;RAM&#x8282;&#x70B9;&#x53EA;&#x5728;RAM&#x4E2D;&#x5B58;&#x50A8;&#x5185;&#x90E8;&#x6570;&#x636E;&#x5E93;&#x8868;&#x3002;&#x8FD9;&#x5E76;&#x4E0D;&#x5305;&#x62EC;&#x6D88;&#x606F;&#x3001;&#x6D88;&#x606F;&#x5B58;&#x50A8;&#x7D22;&#x5F15;&#x3001;&#x961F;&#x5217;&#x7D22;&#x5F15;&#x548C;&#x5176;&#x4ED6;&#x8282;&#x70B9;&#x72B6;&#x6001;&#x3002;</p>
+<p>&#x5728;&#x7EDD;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5E0C;&#x671B;&#x6240;&#x6709;&#x8282;&#x70B9;&#x90FD;&#x662F;&#x78C1;&#x76D8;&#x8282;&#x70B9;;RAM&#x8282;&#x70B9;&#x662F;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x60C5;&#x51B5;&#xFF0C;&#x7528;&#x6765;&#x63D0;&#x9AD8;(high queue, exchange, or binding churn)&#x96C6;&#x7FA4;&#x6027;&#x80FD; &#xFF1F;&#x3002;RAM&#x8282;&#x70B9;&#x4E0D;&#x80FD;&#x63D0;&#x4F9B;&#x66F4;&#x9AD8;&#x7684;&#x6D88;&#x606F;(higher message)&#x901F;&#x7387;&#x3002;&#x5982;&#x679C;&#x6709;&#x7591;&#x60D1;&#xFF0C;&#x53EA;&#x4F7F;&#x7528;&#x78C1;&#x76D8;&#x8282;&#x70B9;&#x3002;&#xFF1F;</p>
+<p>&#x7531;&#x4E8E;RAM&#x8282;&#x70B9;&#x53EA;&#x5728;RAM&#x4E2D;&#x5B58;&#x50A8;&#x5185;&#x90E8;&#x6570;&#x636E;&#x5E93;&#x8868;&#xFF0C;&#x56E0;&#x6B64;&#x5B83;&#x4EEC;&#x5FC5;&#x987B;&#x5728;&#x542F;&#x52A8;&#x65F6;&#x4ECE;&#x5BF9;&#x7B49;&#x8282;&#x70B9;&#x540C;&#x6B65;&#x8FD9;&#x4E9B;&#x8868;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x4E00;&#x4E2A;&#x96C6;&#x7FA4;&#x5FC5;&#x987B;&#x5305;&#x542B;&#x81F3;&#x5C11;&#x4E00;&#x4E2A;&#x78C1;&#x76D8;&#x8282;&#x70B9;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x4E0D;&#x53EF;&#x80FD;&#x624B;&#x52A8;&#x5220;&#x9664;&#x96C6;&#x7FA4;&#x4E2D;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5269;&#x4F59;&#x7684;&#x78C1;&#x76D8;&#x8282;&#x70B9;&#x3002;</p>
+<h5 id="clustering-transcript-with-rabbitmqctl"><a href="https://www.rabbitmq.com/clustering.html#transcript" target="_blank">Clustering Transcript with rabbitmqctl</a></h5>
+<p>The following is a transcript of manually setting up and manipulating a RabbitMQ cluster across three machines - rabbit1, rabbit2, rabbit3. It is recommended that the example is studied before <a href="https://www.rabbitmq.com/cluster-formation.html" target="_blank">more automation-friendly</a> cluster formation options are used.</p>
+<p>We assume that the user is logged into all three machines, that RabbitMQ has been installed on the machines, and that the rabbitmq-server and rabbitmqctl scripts are in the user&apos;s PATH.</p>
+<p>This transcript can be modified to run on a single host, as explained more details below.</p>
+<p>&#x542F;&#x52A8;&#x72EC;&#x7ACB;&#x8282;&#x70B9;</p>
+<h4 id="starting-independent-nodes"><a href="https://www.rabbitmq.com/clustering.html#starting" target="_blank">Starting Independent Nodes</a></h4>
+<blockquote>
+<p>Clusters are set up by re-configuring existing RabbitMQ nodes into a cluster configuration. Hence the first step is to start RabbitMQ on all nodes in the normal way:</p>
+</blockquote>
+<p>&#x96C6;&#x7FA4;&#x662F;&#x628A;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x7684;rabbitmq&#x8282;&#x70B9;&#xFF0C;&#x91CD;&#x65B0;&#x914D;&#x7F6E;&#x5230;&#x96C6;&#x7FA4;&#x7684;&#x914D;&#x7F6E;&#x4E2D;&#x3002;&#x56E0;&#x6B64;&#x7B2C;&#x4E00;&#x6B65;&#x5C31;&#x662F;&#x7528;&#x666E;&#x901A;&#x7684;&#x65B9;&#x6CD5;&#x542F;&#x52A8;rabbitmq</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># on rabbit1</span>
+rabbitmq-server -detached
+<span class="hljs-comment"># on rabbit2</span>
+rabbitmq-server -detached
+<span class="hljs-comment"># on rabbit3</span>
+rabbitmq-server -detached
+</code></pre>
+<blockquote>
+<p>This creates three <em>independent</em> RabbitMQ brokers, one on each node, as confirmed by the <em>cluster_status</em> command:</p>
+</blockquote>
+<p>&#x8FD9;&#x91CC;&#x521B;&#x5EFA;&#x4E86;&#x4E09;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;RabbitMQ brokers&#xFF0C;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x4E0A;&#x4E00;&#x4E2A;&#xFF0C;&#x7528;cluster_status&#x6765;&#x786E;&#x8BA4;</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># on rabbit1</span>
+rabbitmqctl cluster_status
+<span class="hljs-comment"># =&gt; Cluster status of node rabbit@rabbit1 ...</span>
+<span class="hljs-comment"># =&gt; [{nodes,[{disc,[rabbit@rabbit1]}]},{running_nodes,[rabbit@rabbit1]}]</span>
+<span class="hljs-comment"># =&gt; ...done.</span>
+
+<span class="hljs-comment"># on rabbit2</span>
+rabbitmqctl cluster_status
+<span class="hljs-comment"># =&gt; Cluster status of node rabbit@rabbit2 ...</span>
+<span class="hljs-comment"># =&gt; [{nodes,[{disc,[rabbit@rabbit2]}]},{running_nodes,[rabbit@rabbit2]}]</span>
+<span class="hljs-comment"># =&gt; ...done.</span>
+
+<span class="hljs-comment"># on rabbit3</span>
+rabbitmqctl cluster_status
+<span class="hljs-comment"># =&gt; Cluster status of node rabbit@rabbit3 ...</span>
+<span class="hljs-comment"># =&gt; [{nodes,[{disc,[rabbit@rabbit3]}]},{running_nodes,[rabbit@rabbit3]}]</span>
+<span class="hljs-comment"># =&gt; ...done.</span>
+</code></pre>
+<blockquote>
+<p>The node name of a RabbitMQ broker started from the rabbitmq-server shell script is rabbit@<em>shorthostname</em>, where the short node name is lower-case (as in rabbit@rabbit1, above). On Windows, if rabbitmq-server.bat batch file is used, the short node name is upper-case (as in rabbit@RABBIT1). When you type node names, case matters, and these strings must match exactly.</p>
+</blockquote>
+<p>&#x901A;&#x8FC7;<code>rabbitmy-server</code>&#x811A;&#x672C;&#x542F;&#x52A8;&#x7684;RabbitMQ broker&#x7684;&#x8282;&#x70B9;&#x540D;&#x5B57;&#x662F;rabbit@shorthostname&#xFF0C; &#x6BD4;&#x5982;&#x4E0A;&#x9762;&#x7684;&#x8282;&#x70B9;&#x540D;&#x5B57;&#x662F;&#x5C0F;&#x5199;&#x7684;rabbit@rabbit1&#xFF0C;&#x4F46;&#x662F;&#x5728;windows&#x4E0A;&#xFF0C;&#x5982;&#x679C;&#x7528;&#x4E86;rabbitmq-server.bat ,&#x8282;&#x70B9;&#x540D;&#x5374;&#x662F;&#x5927;&#x5199;&#x7684;rabbit@RABBIT1&#x3002;&#x5F53;&#x4F60;&#x5199;&#x8282;&#x70B9;&#x540D;&#x65F6;&#x4E00;&#x5B9A;&#x8981;&#x548C;&#x8FD9;&#x4E9B;&#x5B57;&#x7B26;&#x4E32;&#x5B8C;&#x5168;&#x5339;&#x914D;&#x3002;</p>
+<h4 id="&#x521B;&#x5EFA;&#x96C6;&#x7FA4;">&#x521B;&#x5EFA;&#x96C6;&#x7FA4;</h4>
+<h4 id="creating-a-cluster"><a href="https://www.rabbitmq.com/clustering.html#creating" target="_blank">Creating a Cluster</a></h4>
+<blockquote>
+<p>In order to link up our three nodes in a cluster, we tell two of the nodes, say rabbit@rabbit2 and rabbit@rabbit3, to join the cluster of the third, say rabbit@rabbit1. Prior to that both newly joining members must be <a href="https://www.rabbitmq.com/rabbitmqctl.8.html#reset" target="_blank">reset</a>.</p>
+<p>We first join rabbit@rabbit2 in a cluster with rabbit@rabbit1. To do that, on rabbit@rabbit2 we stop the RabbitMQ application and join the rabbit@rabbit1 cluster, then restart the RabbitMQ application. Note that a node must be <a href="https://www.rabbitmq.com/rabbitmqctl.8.html#reset" target="_blank">reset</a> before it can join an existing cluster. Resetting the node <strong>removes all resources and data that were previously present on that node</strong>. This means that a node cannot be made a member of a cluster and keep its existing data at the same time. When that&apos;s desired, using the <a href="https://www.rabbitmq.com/blue-green-upgrade.html" target="_blank">Blue/Green deployment strategy</a> or <a href="https://www.rabbitmq.com/backup.html" target="_blank">backup and restore</a> are the available options.</p>
+</blockquote>
+<p>&#x4E3A;&#x4E86;&#x628A;&#x4E09;&#x4E2A;&#x8282;&#x70B9;&#x8FDE;&#x6210;&#x4E00;&#x4E2A;&#x96C6;&#x7FA4;&#xFF0C;&#x6211;&#x4EEC;&#x544A;&#x8BC9;rabbit2&#x548C;rabbit3&#x52A0;&#x5165;rabbit1&#xFF0C;&#x65B0;&#x52A0;&#x5165;&#x7684;&#x6210;&#x5458;&#x5FC5;&#x987B;&#x91CD;&#x7F6E;&#x3002;</p>
+<p>&#x9996;&#x5148;&#x628A;rabbit2&#x52A0;&#x5165;&#x5230;&#x53EA;&#x6709;rabbit1&#x7684;&#x96C6;&#x7FA4;&#x4E2D;&#xFF0C;&#x5728;rabbit2&#x4E0A;&#x9700;&#x8981;&#x505C;&#x6B62;RabbitMQ&#x5E94;&#x7528;&#xFF0C;&#x7136;&#x540E;&#x52A0;&#x5165;&#x96C6;&#x7FA4;&#xFF0C;&#x7136;&#x540E;&#x91CD;&#x542F;rabbit2&#xFF0C;note&#xFF1A;&#x5728;&#x52A0;&#x5165;&#x4E00;&#x4E2A;&#x5B58;&#x5728;&#x7684;&#x96C6;&#x7FA4;&#x4E4B;&#x524D;&#x5FC5;&#x987B;&#x91CD;&#x7F6E;&#x8FD9;&#x4E2A;&#x8282;&#x70B9;&#x3002;&#x91CD;&#x7F6E;&#x8FD9;&#x4E2A;&#x8282;&#x70B9;&#x4EE3;&#x8868;&#x7740;&#x8981;&#x79FB;&#x9664;&#x4E4B;&#x524D;&#x5728;&#x8FD9;&#x4E2A;&#x8282;&#x70B9;&#x4E0A;&#x5B58;&#x5728;&#x7684;&#x6240;&#x6709;&#x7684;&#x8D44;&#x6E90;&#x548C;&#x4FE1;&#x606F;&#xFF0C;&#x610F;&#x5473;&#x7740;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x4E0D;&#x80FD;&#x540C;&#x65F6;&#x52A0;&#x5165;&#x4E00;&#x4E2A;&#x96C6;&#x7FA4;&#x5E76;&#x4FDD;&#x7559;&#x5B83;&#x4E4B;&#x524D;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x7684;&#x6570;&#x636E;&#x3002;&#x5982;&#x679C;&#x975E;&#x8981;&#x8FD9;&#x6837;&#x7684;&#x8BDD;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x84DD;&#x7EFF;&#x90E8;&#x7F72;&#x7B56;&#x7565;&#x6216;&#x8005;&#x5907;&#x4EFD;&#x6062;&#x590D;&#x3002;</p>
+<p>&#x5982;&#x4E0B;&#x4E3A;&#x52A0;&#x5165;&#x6D41;&#x7A0B;&#xFF0C;rabbit2&#x52A0;&#x5165;&#x5230;rabbit1&#x4E2D;&#x3002;</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># on rabbit2</span>
+rabbitmqctl stop_app
+<span class="hljs-comment"># =&gt; Stopping node rabbit@rabbit2 ...done.</span>
+
+rabbitmqctl reset
+<span class="hljs-comment"># =&gt; Resetting node rabbit@rabbit2 ...</span>
+
+rabbitmqctl join_cluster rabbit@rabbit1
+<span class="hljs-comment"># =&gt; Clustering node rabbit@rabbit2 with [rabbit@rabbit1] ...done.</span>
+
+rabbitmqctl start_app
+<span class="hljs-comment"># =&gt; Starting node rabbit@rabbit2 ...done.</span>
+
+
+<span class="hljs-comment"># on rabbit1</span>
+rabbitmqctl cluster_status
+<span class="hljs-comment"># =&gt; Cluster status of node rabbit@rabbit1 ...</span>
+<span class="hljs-comment"># =&gt; [{nodes,[{disc,[rabbit@rabbit1,rabbit@rabbit2]}]},</span>
+<span class="hljs-comment"># =&gt;  {running_nodes,[rabbit@rabbit2,rabbit@rabbit1]}]</span>
+<span class="hljs-comment"># =&gt; ...done.</span>
+
+<span class="hljs-comment"># on rabbit2</span>
+rabbitmqctl cluster_status
+<span class="hljs-comment"># =&gt; Cluster status of node rabbit@rabbit2 ...</span>
+<span class="hljs-comment"># =&gt; [{nodes,[{disc,[rabbit@rabbit1,rabbit@rabbit2]}]},</span>
+<span class="hljs-comment"># =&gt;  {running_nodes,[rabbit@rabbit1,rabbit@rabbit2]}]</span>
+<span class="hljs-comment"># =&gt; ...done.</span>
+</code></pre>
+<blockquote>
+<p>Now we join rabbit@rabbit3 to the same cluster. The steps are identical to the ones above, except this time we&apos;ll cluster to rabbit2 to demonstrate that the node chosen to cluster to does not matter - it is enough to provide one online node and the node will be clustered to the cluster that the specified node belongs to.</p>
+</blockquote>
+<p>&#x7136;&#x540E;&#x628A;rabbit3&#x52A0;&#x5165;&#x5230;&#x8FD9;&#x4E2A;&#x96C6;&#x7FA4;&#x4E2D;&#xFF0C;&#x6B65;&#x9AA4;&#x548C;&#x4E0A;&#x9762;&#x662F;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x7684;,&#x53EA;&#x4E0D;&#x8FC7;&#x8FD9;&#x4E00;&#x6B21;&#x6211;&#x4EEC;&#x901A;&#x8FC7;rabbit2&#x52A0;&#x5165;&#x96C6;&#x7FA4;&#xFF0C;&#x6765;&#x8BC1;&#x660E;&#x901A;&#x8FC7;&#x4EFB;&#x610F;&#x8282;&#x70B9;&#x6765;&#x52A0;&#x5165;&#x96C6;&#x7FA4;&#x7684;&#x6548;&#x679C;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x8054;&#x673A;&#x8282;&#x70B9;&#x5C31;&#x8DB3;&#x591F;&#x4E86;&#xFF0C;&#x8BE5;&#x8282;&#x70B9;&#x5C06;&#x628A;&#x6307;&#x5B9A;&#x8282;&#x70B9;&#x52A0;&#x5230;&#x6240;&#x5C5E;&#x7684;&#x96C6;&#x7FA4;&#x3002;</p>
+<blockquote>
+<p>A stopping node picks an online cluster member (only disc nodes will be considered) to sync with after restart. Upon restart the node will try to contact that peer 10 times by default, with 30 second response timeouts. In case the peer becomes available in that time interval, the node successfully starts, syncs what it needs from the peer and keeps going. If the peer does not become available, the restarted node will <strong>give up and voluntarily stop</strong>.</p>
+<p>When a node has no online peers during shutdown, it will start without attempts to sync with any known peers. It does not start as a standalone node, however, and peers will be able to rejoin it.</p>
+<p>A node rejoining after a node name or host name change can start as <a href="https://www.rabbitmq.com/clustering.html#peer-discovery-how-does-it-work" target="_blank">a blank node</a> if its data directory path changes as a result. Such nodes will fail to rejoin the cluster. While the node is offline, its peers can be reset or started with a blank data directory. In that case the recovering node will fail to rejoin its peer as well since internal data store cluster identity would no longer match.</p>
+<p>Consider the following scenario:</p>
+<ol>
+<li>A cluster of 3 nodes, A, B and C is formed</li>
+<li>Node A is shut down</li>
+<li>Node B is reset</li>
+<li>Node A is started</li>
+<li>Node A tries to rejoin B but B&apos;s cluster identity has changed</li>
+<li>Node B doesn&apos;t recognise A as a known cluster member because it&apos;s been reset</li>
+</ol>
+<p>in this case node B will reject the clustering attempt from A with an appropriate error message in the log:</p>
+<pre><code>Node &apos;rabbit@node1.local&apos; thinks it&apos;s clustered with node &apos;rabbit@node2.local&apos;, but &apos;rabbit@node2.local&apos; disagrees
+</code></pre><p>In this case B can be reset again and then will be able to join A, or A can be reset and will successfully join B.</p>
+<p>When the entire cluster is brought down therefore, the last node to go down is the only one that didn&apos;t have any running peers at the time of shutdown. That node can start without contacting any peers first. Since nodes will try to contact a known peer for up to 5 minutes (by default), nodes can be restarted in any order in that period of time. In this case they will rejoin each other one by one successfully. This window of time can be adjusted using two configuration settings:</p>
+<pre><code class="lang-ini"><span class="hljs-comment"># wait for 60 seconds instead of 30</span>
+<span class="hljs-attr">mnesia_table_loading_retry_timeout</span> = <span class="hljs-number">60000</span>
+
+<span class="hljs-comment"># retry 15 times instead of 10</span>
+<span class="hljs-attr">mnesia_table_loading_retry_limit</span> = <span class="hljs-number">15</span>
+</code></pre>
+<p>By adjusting these settings and tweaking the time window in which known peer has to come back it is possible to account for cluster-wide redeployment scenarios that can be longer than 5 minutes to complete.</p>
+<p>During <a href="https://www.rabbitmq.com/upgrade.html" target="_blank">upgrades</a>, sometimes the last node to stop must be the first node to be started after the upgrade. That node will be designated to perform a cluster-wide schema migration that other nodes can sync from and apply when they rejoin.</p>
+<p>In some cases the last node to go offline cannot be brought back up. It can be removed from the cluster using the forget_cluster_node <a href="https://www.rabbitmq.com/cli.html" target="_blank">rabbitmqctl</a> command.</p>
+<p>Alternatively force_boot <a href="https://www.rabbitmq.com/cli.html" target="_blank">rabbitmqctl</a> command can be used on a node to make it boot without trying to sync with any peers (as if they were last to shut down). This is usually only necessary if the last node to shut down or a set of nodes will never be brought back online.</p>
+</blockquote>
+<p>(&#x5F85;&#x7EED;&#x3002;&#x3002;&#x3002;)</p>
 
                                 
                                 </section>
@@ -578,10 +701,14 @@
 
             
                 
-                <a href="overview.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 概述（Mirroring, Shovel, Federation Overview）">
+                <a href="overview.html" class="navigation navigation-prev " aria-label="Previous page: Mirroring, Shovel, Federation Overview">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="highly_available.html" class="navigation navigation-next " aria-label="Next page: Highly Available">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -590,7 +717,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Clustering","level":"1.4.2","depth":2,"next":{"title":"Queue Mirroring","level":"1.4.3","depth":2,"url":"https://www.rabbitmq.com/ha.html","ref":"https://www.rabbitmq.com/ha.html","articles":[]},"previous":{"title":"概述（Mirroring, Shovel, Federation Overview）","level":"1.4.1","depth":2,"path":"distribute/overview.md","ref":"distribute/overview.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"distribute/clustering.md","mtime":"2020-04-22T12:31:35.036Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-23T02:22:03.678Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Clustering","level":"2.1.2","depth":2,"next":{"title":"Highly Available","level":"2.1.3","depth":2,"path":"distribute/highly_available.md","ref":"distribute/highly_available.md","articles":[]},"previous":{"title":"Mirroring, Shovel, Federation Overview","level":"2.1.1","depth":2,"path":"distribute/overview.md","ref":"distribute/overview.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"distribute/clustering.md","mtime":"2020-04-24T02:16:44.415Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-24T03:48:12.552Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
